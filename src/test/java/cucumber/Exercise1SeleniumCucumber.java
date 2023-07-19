@@ -35,9 +35,9 @@ public class Exercise1SeleniumCucumber {
     public void clickSignInButton() {
         myStoreMainPaige.clickSignInButton();
     }
-    @When("Login and password entered in log form")
-    public void enterLoginAndPassword() {
-        logInPage.fillLogInForm(userData.setEmail("damiangorzkowski@gmail.com").setPassword("1234567890"));
+    @When("{string} and {string} entered in log form")
+    public void enterLoginAndPassword(String email, String password) {
+        logInPage.fillLogInForm(userData.setEmail(email).setPassword(password));
     }
     @And("SIGN IN button clicked")
     public void clickSingInButtonOnLogInPage() {
@@ -58,7 +58,11 @@ public class Exercise1SeleniumCucumber {
 
 
     }
-//    And Save button clicked
+    @And("Save button clicked")
+    public void clickSaveButtonOnForm() {
+        newAddressFormPage.clickSaveButton();
+
+    }
 //    Then Will check if the data in the added address is correct.
 //    And Will delete the above address by clicking "delete"
 //    And Will check if the address has been deleted

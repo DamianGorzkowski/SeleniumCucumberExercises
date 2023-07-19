@@ -18,6 +18,8 @@ public class NewAddressFormPage {
     private  WebElement country;
     @FindBy(id = "field-phone")
     private WebElement phone;
+    @FindBy(css = ".form-control-submit")
+    private WebElement saveButton;
 
     public NewAddressFormPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
@@ -32,6 +34,9 @@ public class NewAddressFormPage {
         country.sendKeys(userData.getCountry());
         phone.sendKeys(userData.getPhone());
 
+    }
+    public void clickSaveButton() {
+        saveButton.click();
     }
 
 }
