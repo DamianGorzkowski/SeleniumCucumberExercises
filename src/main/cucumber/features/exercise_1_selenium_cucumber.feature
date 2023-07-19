@@ -10,6 +10,7 @@ Feature: Resolving first exercise
     Then Will check if the data in the added address is correct.
     And Will delete the above address by clicking "delete"
     And Will check if the address has been deleted
+    And Quit Driver
 
     Examples:
     |Alias|Address    |City     |Zip/postal code|Country|Phone    |
