@@ -34,8 +34,14 @@ public class Exercise1SeleniumCucumber {
     @When("Login and password entered in log form")
     public void enterLoginAndPassword() {
         logInPage.fillLogInForm(userData.setEmail("damiangorzkowski@gmail.com").setPassword("1234567890"));
-
-
+    }
+    @And("SIGN IN button clicked")
+    public void clickSingInButtonOnLogInPage() {
+        logInPage.clickSignInButtonOnLogInPage();
+    }
+    @And("Tile Addresses clicked in the bottom menu")
+    public void clickLinkAddresses () {
+        logInPage.clickLinkAddresses();
 
     }
 

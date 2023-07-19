@@ -3,7 +3,8 @@ Feature: Resolving first exercise
     Given https://mystore-testlab.coderslab.pl/index.php opened in Google Chrome
     And Sign in button clicked
     When Login and password entered in log form
-    And Tile 'Addresses' clicked (in the bottom menu)
+    And SIGN IN button clicked
+    And Tile Addresses clicked in the bottom menu
     And Create new address button clicked
     And New address form filled with '<Alias>' '<Address>' '<City>' '<Zip/postal code>' '<Country>' '<Phone>'
     And Save button clicked
