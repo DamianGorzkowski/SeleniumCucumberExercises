@@ -3,6 +3,7 @@ package cucumber;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjectpattern.mystore.MyStoreMainPage;
@@ -24,16 +25,14 @@ public class Exercise1SeleniumCucumber {
     public void clickSignInButton() {
         myStoreMainPaige.clickSignInButton();
     }
+    @When("Login and password entered in log form")
+    public void enterLoginAndPassword() {
+
+    }
 
 
 }
 
-
-
-
-
-
-//    And Sign in button clicked
 //    When Login and password entered in log form
 //    And Tile 'Addresses' clicked (in the bottom menu)
 //    And Create new address button clicked
@@ -48,4 +47,4 @@ public class Exercise1SeleniumCucumber {
 
 
 
-}
+
