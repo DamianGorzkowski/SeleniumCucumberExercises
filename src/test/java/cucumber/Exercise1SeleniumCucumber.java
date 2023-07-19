@@ -6,10 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pageobjectpattern.mystore.AddressesPage;
-import pageobjectpattern.mystore.LogInPage;
-import pageobjectpattern.mystore.MyStoreMainPage;
-import pageobjectpattern.mystore.UserData;
+import pageobjectpattern.mystore.*;
 
 import java.time.Duration;
 
@@ -19,6 +16,7 @@ public class Exercise1SeleniumCucumber {
     private UserData userData;
     private LogInPage logInPage;
     private AddressesPage addressesPage;
+    private NewAddressFormPage newAddressFormPage;
 
     @Given("^([^ ]+) opened in Google Chrome")
     public void openInGoogleChrome(String url) {
@@ -28,6 +26,8 @@ public class Exercise1SeleniumCucumber {
         this.myStoreMainPaige = new MyStoreMainPage(driver);
         this.logInPage = new LogInPage(driver);
         this.addressesPage = new AddressesPage(driver);
+        this.newAddressFormPage = new NewAddressFormPage(driver);
+
 
         driver.get(url);
     }
@@ -52,7 +52,12 @@ public class Exercise1SeleniumCucumber {
         addressesPage.clickCreateNewAddress();
     }
 
-//    And New address form filled with '<Alias>' '<Address>' '<City>' '<Zip/postal code>' '<Country>' '<Phone>'
+    @And("New address form filled with {string} {string} {string} {string} {string} {string}")
+    public void addressFormFill(String alias, String address, String city, String zipcode, String country, String phone) {
+        newAddressFormPage.addressFormFill(userData.setAlias(alias).setAddress(address).setCity(city).setZipCode(zipcode).setCountry(country).setPhone(phone));
+
+
+    }
 //    And Save button clicked
 //    Then Will check if the data in the added address is correct.
 //    And Will delete the above address by clicking "delete"

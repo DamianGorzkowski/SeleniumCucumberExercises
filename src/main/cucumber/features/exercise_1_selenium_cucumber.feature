@@ -6,7 +6,7 @@ Feature: Resolving first exercise
     And SIGN IN button clicked
     And Tile Addresses clicked in the bottom menu
     And Create new address button clicked
-    And New address form filled with '<Alias>' '<Address>' '<City>' '<Zip/postal code>' '<Country>' '<Phone>'
+    And New address form filled with '<Alias>' '<Address>' '<City>' '<Zip postal code>' '<Country>' '<Phone>'
     And Save button clicked
     Then Will check if the data in the added address is correct.
     And Will delete the above address by clicking "delete"
@@ -14,6 +14,6 @@ Feature: Resolving first exercise
     And Quit Driver
 
     Examples:
-    |Alias|Address    |City     |Zip/postal code|Country|Phone    |
+    |Alias|Address    |City     |Zip postal code|Country|Phone    |
     |Dom  |Bobrowiecka|Warszawa |02-340         |Poland |506506506|
 
