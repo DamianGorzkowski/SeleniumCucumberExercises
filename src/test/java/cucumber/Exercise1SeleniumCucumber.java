@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pageobjectpattern.mystore.AddressesPage;
 import pageobjectpattern.mystore.LogInPage;
 import pageobjectpattern.mystore.MyStoreMainPage;
 import pageobjectpattern.mystore.UserData;
@@ -17,6 +18,7 @@ public class Exercise1SeleniumCucumber {
     private MyStoreMainPage myStoreMainPaige;
     private UserData userData;
     private LogInPage logInPage;
+    private AddressesPage addressesPage;
 
     @Given("^([^ ]+) opened in Google Chrome")
     public void openInGoogleChrome(String url) {
@@ -25,6 +27,8 @@ public class Exercise1SeleniumCucumber {
         this.userData = new UserData(driver);
         this.myStoreMainPaige = new MyStoreMainPage(driver);
         this.logInPage = new LogInPage(driver);
+        this.addressesPage = new AddressesPage(driver);
+
         driver.get(url);
     }
     @And("Sign in button clicked")
@@ -42,20 +46,22 @@ public class Exercise1SeleniumCucumber {
     @And("Tile Addresses clicked in the bottom menu")
     public void clickLinkAddresses () {
         logInPage.clickLinkAddresses();
-
+    }
+    @And("Create new address button clicked")
+    public void clickCreateNewAddress () {
+        addressesPage.clickCreateNewAddress();
     }
 
-
-}
-
-//    When Login and password entered in log form
-//    And Tile 'Addresses' clicked (in the bottom menu)
-//    And Create new address button clicked
 //    And New address form filled with '<Alias>' '<Address>' '<City>' '<Zip/postal code>' '<Country>' '<Phone>'
 //    And Save button clicked
 //    Then Will check if the data in the added address is correct.
 //    And Will delete the above address by clicking "delete"
 //    And Will check if the address has been deleted
+
+}
+
+
+
 
 
 
