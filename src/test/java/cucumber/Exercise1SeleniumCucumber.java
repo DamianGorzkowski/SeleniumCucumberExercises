@@ -7,17 +7,20 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjectpattern.mystore.MyStoreMainPage;
+import pageobjectpattern.mystore.UserData;
 
 import java.time.Duration;
 
 public class Exercise1SeleniumCucumber {
     private WebDriver driver;
     private MyStoreMainPage myStoreMainPaige;
+    private UserData userData;
 
     @Given("^([^ ]+) opened in Google Chrome")
     public void openInGoogleChrome(String url) {
         this.driver = new ChromeDriver();
         this.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        this.userData = new UserData(driver);
         this.myStoreMainPaige = new MyStoreMainPage(driver);
         driver.get(url);
     }
@@ -27,6 +30,7 @@ public class Exercise1SeleniumCucumber {
     }
     @When("Login and password entered in log form")
     public void enterLoginAndPassword() {
+
 
     }
 

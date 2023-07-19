@@ -11,5 +11,10 @@ public class LogInPage {
     @FindBy(id = "field-password")
     private WebElement passwordInputBox;
 
+    public void fillLogInForm(UserData userData) {
+        emailInputBox.sendKeys();
+
+    }
+
 
 }
