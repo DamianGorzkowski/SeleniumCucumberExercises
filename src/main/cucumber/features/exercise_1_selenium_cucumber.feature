@@ -12,7 +12,7 @@ Feature: Resolving first exercise
     And Will take screenshot of added address
     And Will delete the above address by clicking "delete"
     And Will check if the address has been deleted
-    And Quit Driver
+    And Quit Driver for better performance
 
     Examples:
     |Alias|Address    |City     |Zip postal code|Country|Phone    |Login                     |password  |

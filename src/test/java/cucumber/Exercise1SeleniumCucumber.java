@@ -104,8 +104,10 @@ public class Exercise1SeleniumCucumber {
         String panelText = addressSuccessfulCreationPanel.getText();
         assertEquals("Address successfully deleted!", panelText);
     }
-
-//    And Will check if the address has been deleted
+    @And("Quit Driver for better performance")
+    public void quitDriver() {
+        driver.quit();
+    }
 
     }
 
