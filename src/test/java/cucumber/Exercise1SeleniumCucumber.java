@@ -4,13 +4,16 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageobjectpattern.mystore.*;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.time.Duration;
+import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -83,11 +86,19 @@ public class Exercise1SeleniumCucumber {
         String panelText = addressSuccessfulCreationPanel.getText();
         assertEquals("Address successfully added!", panelText);
     }
+    @And("Will take screenshot of added address")
+    public void saveScreenshot() throws IOException {
+        File tmpScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        String currentDateTime = LocalDateTime.now().toString().replaceAll(":", "_");
+        Files.copy(tmpScreenshot.toPath(), Paths.get("C:", "test-evidence", "qwant-search-" + currentDateTime + ".png"));
+    }
 
         @And("Will delete the above address by clicking \"delete\"")
         public void deleteAddress () {
             addressesPage.deleteAddress();
         }
+
+
 //    And Will check if the address has been deleted
 
     }

@@ -9,8 +9,6 @@
       <change beforePath="$PROJECT_DIR$/out" beforeDir="false" afterPath="$PROJECT_DIR$/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/cucumber/features/exercise_1_selenium_cucumber.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cucumber/features/exercise_1_selenium_cucumber.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/Exercise1SeleniumCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/Exercise1SeleniumCucumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/SearchWithDuckDuckGoCucumberSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/SearchWithDuckDuckGoCucumberSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/AddressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/AddressesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
