@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea39217e-9a29-4b78-b377-c46b8de5d97d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/cucumber/features/exercise_2_selenium_cucumber.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/Exercise2SeleniumCucumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/cucumber/Exercise2SeleniumCucumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out" beforeDir="false" afterPath="$PROJECT_DIR$/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/cucumber/features/exercise_1_selenium_cucumber.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cucumber/features/exercise_1_selenium_cucumber.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/Exercise1SeleniumCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/Exercise1SeleniumCucumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/MyStoreMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/MyStoreMainPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,17 +45,57 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/A/DG_CodersLab/Wykladowca/SeleniumCourseOnlTeaW39&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/A/DG_CodersLab/SeleniumCucumberExercises&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Exercise1SeleniumCucumberTest">
-    <configuration name="Feature: search_with_duck_duck_go_outline" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Exercise2SeleniumCucumberTest">
+    <configuration name="Feature: exercise_1_selenium_cucumber" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/cucumber/features/search_with_duck_duck_go_outline.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/cucumber/features/exercise_1_selenium_cucumber.feature" />
+      <option name="GLUE" value="cucumber" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="SeleniumCucumberExercises" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: search_with_duck_duck_go_outline" />
+      <option name="SUGGESTED_NAME" value="Feature: exercise_1_selenium_cucumber" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: exercise_2_selenium_cucumber" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/cucumber/features/exercise_2_selenium_cucumber.feature" />
+      <option name="GLUE" value="cucumber" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SeleniumCucumberExercises" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: exercise_2_selenium_cucumber" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Going through the entire purchasing process" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/cucumber/features/exercise_2_selenium_cucumber.feature" />
+      <option name="GLUE" value="cucumber" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="SeleniumCucumberExercises" />
+      <option name="NAME_FILTER" value="^Going through the entire purchasing process$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Going through the entire purchasing process$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Going through the entire purchasing process" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -77,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchWithDuckDuckGoCucumberOutlineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Exercise2SeleniumCucumberTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SeleniumCucumberExercises" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +131,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="cucumber" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.SearchWithDuckDuckGoCucumberOutlineTest" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.Exercise2SeleniumCucumberTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,9 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Exercise2SeleniumCucumberTest" />
         <item itemvalue="JUnit.Exercise1SeleniumCucumberTest" />
-        <item itemvalue="JUnit.SearchWithDuckDuckGoCucumberOutlineTest" />
-        <item itemvalue="Cucumber Java.Feature: search_with_duck_duck_go_outline" />
+        <item itemvalue="Cucumber Java.Feature: exercise_2_selenium_cucumber" />
+        <item itemvalue="Cucumber Java.Feature: exercise_1_selenium_cucumber" />
+        <item itemvalue="Cucumber Java.Scenario: Going through the entire purchasing process" />
       </list>
     </recent_temporary>
   </component>

@@ -36,13 +36,11 @@ public class Exercise1SeleniumCucumber {
         this.logInPage = new LogInPage(driver);
         this.addressesPage = new AddressesPage(driver);
         this.newAddressFormPage = new NewAddressFormPage(driver);
-
-
         driver.get(url);
     }
 
     @And("Sign in button clicked")
-    public void clickSignInButton() {
+    public void clickSignInButtonOnMainPage() {
         myStoreMainPaige.clickSignInButton();
     }
 
@@ -93,7 +91,7 @@ public class Exercise1SeleniumCucumber {
         Files.copy(tmpScreenshot.toPath(), Paths.get("C:", "test-evidence", "qwant-search-" + currentDateTime + ".png"));
     }
 
-        @And("Will delete the above address by clicking \"delete\"")
+        @And("The above address is deleted")
         public void deleteAddress () {
             addressesPage.deleteAddress();
         }
@@ -104,6 +102,8 @@ public class Exercise1SeleniumCucumber {
         String panelText = addressSuccessfulCreationPanel.getText();
         assertEquals("Address successfully deleted!", panelText);
     }
+
+
     @And("Quit Driver for better performance")
     public void quitDriver() {
         driver.quit();

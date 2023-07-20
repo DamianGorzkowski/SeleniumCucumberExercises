@@ -10,7 +10,7 @@ Feature: Resolving first exercise
     And Save button clicked
     Then Will check if the data in the added address is correct.
     And Will take screenshot of added address
-    And Will delete the above address by clicking "delete"
+    And The above address is deleted
     And Will check if the address has been deleted
     And Quit Driver for better performance
 
