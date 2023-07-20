@@ -97,7 +97,13 @@ public class Exercise1SeleniumCucumber {
         public void deleteAddress () {
             addressesPage.deleteAddress();
         }
-
+    @And("Will check if the address has been deleted")
+    public void checkIfAddressIsDeleted() {
+        addressSuccessfulCreationPanel = driver.findElement(By.cssSelector(".alert li"));
+        assertTrue(addressSuccessfulCreationPanel.isDisplayed());
+        String panelText = addressSuccessfulCreationPanel.getText();
+        assertEquals("Address successfully deleted!", panelText);
+    }
 
 //    And Will check if the address has been deleted
 
