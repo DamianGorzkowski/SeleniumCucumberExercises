@@ -12,7 +12,7 @@ public class MyStoreMainPage {
 
     @FindBy(css = ".logo")
     private WebElement myStoreLogo;
-    @FindBy(css = ".logout")
+    @FindBy(css = ".logo")
     private WebElement logoMyStore;
 
 
