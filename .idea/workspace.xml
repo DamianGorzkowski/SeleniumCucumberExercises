@@ -9,7 +9,8 @@
       <change beforePath="$PROJECT_DIR$/out" beforeDir="false" afterPath="$PROJECT_DIR$/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/cucumber/features/exercise_1_selenium_cucumber.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/cucumber/features/exercise_1_selenium_cucumber.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/Exercise1SeleniumCucumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/Exercise1SeleniumCucumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/NewAddressFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/NewAddressFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/SearchWithDuckDuckGoCucumberSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cucumber/SearchWithDuckDuckGoCucumberSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/AddressesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageobjectpattern/mystore/AddressesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,15 +37,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/A/DG_CodersLab/SeleniumCourse_ONL_TEA_39"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/A/DG_CodersLab/Wykladowca/SeleniumCourseOnlTeaW39&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="JUnit.Exercise1SeleniumCucumberTest">
     <configuration name="Feature: search_with_duck_duck_go_outline" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />

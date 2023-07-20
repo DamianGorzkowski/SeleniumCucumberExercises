@@ -64,7 +64,7 @@ public class SearchWithDuckDuckGoCucumberSteps {
         driver.quit();
     }
 
-    @Then("Save screenshot")
+    @And("Save screenshot")
     public void saveScreenshot() throws IOException {
         File tmpScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         String currentDateTime = LocalDateTime.now().toString().replaceAll(":", "_");

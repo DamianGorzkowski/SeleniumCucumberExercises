@@ -9,6 +9,7 @@ Feature: Resolving first exercise
     And New address form filled with '<Alias>' '<Address>' '<City>' '<Zip postal code>' '<Country>' '<Phone>'
     And Save button clicked
     Then Will check if the data in the added address is correct.
+    And Save screenshot
     And Will delete the above address by clicking "delete"
     And Will check if the address has been deleted
     And Quit Driver
