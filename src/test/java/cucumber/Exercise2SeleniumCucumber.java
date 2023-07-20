@@ -13,7 +13,6 @@ public class Exercise2SeleniumCucumber {
 
     @And("Back to Main Page")
     public void backToMainPage () {
-        this.myStoreMainPaige = new MyStoreMainPage(driver);
         myStoreMainPaige.backToMainPage();
     }
 
