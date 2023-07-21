@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ea39217e-9a29-4b78-b377-c46b8de5d97d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out" beforeDir="false" afterPath="$PROJECT_DIR$/out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/cucumber/features/search_with_duck_duck_go_outline.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/SearchWithDuckDuckGoCucumberOutlineTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/cucumber/SearchWithDuckDuckGoCucumberSteps.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjectpattern/ddg/DdgMainPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageobjectpattern/ddg/DdgSearchResultsPage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +32,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/A/DG_CodersLab/SeleniumCucumberExercises&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/A/DG_CodersLab/SeleniumCucumberExercises — kopia"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Cucumber Java.Feature: exercise_1_selenium_cucumber">
     <configuration name="Feature: exercise_1_selenium_cucumber" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
