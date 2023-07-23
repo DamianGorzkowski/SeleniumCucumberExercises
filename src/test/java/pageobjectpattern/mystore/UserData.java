@@ -9,6 +9,9 @@ public class UserData {
     private String city;
     private String zipCode;
     private String country;
+    private String phone;
+    private String email;
+    private String password;
 
     public String getAlias() {
         return alias;
@@ -67,10 +70,7 @@ public class UserData {
         return this;
     }
 
-    private String phone;
 
-    private String email;
-    private String password;
 
 
 

@@ -43,37 +43,31 @@ public class Exercise1SeleniumCucumber {
     public void clickSignInButtonOnMainPage() {
         myStoreMainPaige.clickSignInButton();
     }
-
     @When("{string} and {string} entered in log form")
     public void enterLoginAndPassword(String email, String password) {
         logInPage.fillLogInForm(userData.setEmail(email).setPassword(password));
     }
-
     @And("SIGN IN button clicked")
     public void clickSingInButtonOnLogInPage() {
         logInPage.clickSignInButtonOnLogInPage();
     }
-
     @And("Tile Addresses clicked in the bottom menu")
     public void clickLinkAddresses() {
         logInPage.clickLinkAddresses();
     }
-
     @And("Create new address button clicked")
     public void clickCreateNewAddress() {
         addressesPage.clickCreateNewAddress();
     }
-
     @And("New address form filled with {string} {string} {string} {string} {string} {string}")
     public void addressFormFill(String alias, String address, String city, String zipcode, String country, String phone) {
         newAddressFormPage.addressFormFill(userData.setAlias(alias).setAddress(address).setCity(city).setZipCode(zipcode).setCountry(country).setPhone(phone));
     }
-
     @And("Save button clicked")
     public void clickSaveButtonOnForm() {
         newAddressFormPage.clickSaveButton();
     }
-    //    @Then("Will check if the data in the added address is correct.")
+//    @Then("Will check if the data in the added address is correct.")
 //    public void checkIfAddressIsCorrectlyAdded() {
 //        addressesPage.checkIfAddressIsAdded();
 //    }
@@ -88,13 +82,12 @@ public class Exercise1SeleniumCucumber {
     public void saveScreenshot() throws IOException {
         File tmpScreenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         String currentDateTime = LocalDateTime.now().toString().replaceAll(":", "_");
-        Files.copy(tmpScreenshot.toPath(), Paths.get("C:", "test-evidence", "qwant-search-" + currentDateTime + ".png"));
+        Files.copy(tmpScreenshot.toPath(), Paths.get("C:", "test-evidence", "exercise 1", "address-created " + currentDateTime + ".png"));
     }
-
-        @And("The above address is deleted")
-        public void deleteAddress () {
-            addressesPage.deleteAddress();
-        }
+    @And("The above address is deleted")
+    public void deleteAddress () {
+        addressesPage.deleteAddress();
+    }
     @And("Will check if the address has been deleted")
     public void checkIfAddressIsDeleted() {
         addressSuccessfulCreationPanel = driver.findElement(By.cssSelector(".alert li"));
@@ -102,8 +95,6 @@ public class Exercise1SeleniumCucumber {
         String panelText = addressSuccessfulCreationPanel.getText();
         assertEquals("Address successfully deleted!", panelText);
     }
-
-
     @And("Quit Driver for better performance")
     public void quitDriver() {
         driver.quit();
